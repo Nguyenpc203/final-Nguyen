@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<!-- "name" : "Iphone 16",
+    "price" : 2000,
+    "oldPrice" : 3000,
+    "thumbnail" : "https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/3/7/638454104625932893_honor-x7b-dd.jpg",
+    "description" : "Iphone 15 hahah",
+    "stock" : "10",
+    "category" : "diện thoại",
+    "brand" : "apple",
+    "created_by" : "phuong nguyen",
+    "updated_by" : "phuong phuong" -->
+	<h1>Thêm sản phẩm</h1>
+    <form action="/api/v1/product/update-product/id" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="price">price:</label>
+        <input type="price" id="price" name="price" required><br><br>
+        <label for="oldPrice">oldPrice:</label>
+        <input type="oldPrice" id="oldPrice" name="oldPrice" required><br><br>
+        <label for="thumbnail">thumbnail:</label>
+        <input type="thumbnail" id="thumbnail" name="thumbnail" required><br><br>
+        <label for="description">description:</label>
+        <input type="description" id="description" name="description" required><br><br>
+        <label for="stock">stock:</label>
+        <input type="stock" id="stock" name="stock" required><br><br>
+        <label for="category">category:</label>
+        <input type="category" id="category" name="category" required><br><br>
+        <label for="brand">brand:</label>
+        <input type="brand" id="brand" name="brand" required><br><br>
+        <label for="created_by">created_by:</label>
+        <input type="created_by" id="created_by" name="created_by" required><br><br>
+        <label for="updated_by">updated_by:</label>
+        <input type="updated_by" id="updated_by" name="updated_by" required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
